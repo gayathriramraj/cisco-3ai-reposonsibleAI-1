@@ -1,0 +1,6 @@
+Getting a 401 on login. Here is the trace:
+  File "auth.py", line 44, in verify_token
+    resp = requests.get(url, headers={"Authorization": api_key})
+  requests.exceptions.HTTPError: 401 Client Error
+ api_key="REDACTED"
+What's wrong?
